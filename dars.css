@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --asosiy-body-orqa-rangi:#202C36;
+    --asosiy-text-rangi:white;
+    --asosiy-header-orqa-rangi:#2B3844;
+}
+
+body{
+    font-family: "Nunito Sans";
+    background-color: var(--asosiy-body-orqa-rangi);
+}
+
+.header{
+    background-color: var(--asosiy-header-orqa-rangi);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    padding: 24px 0px;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_btn{
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+}
+
+.mobile{
+    display: none;
+}
+
+.plan{
+    display: none;
+}
+
+@media (max-width:500px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .header_btn{
+        font-size: 12px;
+    }
+}
+
+.hero{
+    padding: 48px 0;
+}
+
+.hero_input{
+    padding: 20px 0 20px 30px;
+    display: flex;
+    align-items: center;
+    max-width: 480px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--asosiy-header-orqa-rangi);
+    gap: 10px;
+}
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--asosiy-text-rangi);
+}
+
+.bigbox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    max-width: 264px;
+    width: 100%;
+    background-color: var(--asosiy-header-orqa-rangi);
+    padding-bottom: 20px;
+    margin-top: 48px;
+    border-radius: 5px;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.big_box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+@media (max-width:830px){
+    .bigbox{
+        flex-wrap: wrap;
+    }
+    .big_box{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:500px){
+    .bigbox{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .big_box{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
